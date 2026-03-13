@@ -25,7 +25,7 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, form.email, form.password);
       alert("로그인 성공!");
-      navigate("/home");
+      navigate("/waiting"); // ✅ 로그인 후 Waiting 페이지로 이동
     } catch {
       alert("이메일 또는 비밀번호가 올바르지 않습니다");
     } finally {
