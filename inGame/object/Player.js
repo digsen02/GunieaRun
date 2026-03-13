@@ -14,6 +14,7 @@ export default class Player extends Object {
 
     jump(spaceKey){
         if (spaceKey.isDown && this.body.touching.down){
+            this.setVelocityY(-750);
             this.setVelocityY(-900);
         }
     }
